@@ -15,7 +15,7 @@
                     "type": "ComponentLeftHolder",
                     "element": {
                         "style": {
-                            "width": "33%"
+                            "width": "50%"
                         }
                     },
                     "arrayAppObject": [
@@ -32,59 +32,9 @@
                                     "arrayAppObjectEvent": [
                                         {
                                             "name": "router",
-                                            "link": "server"
+                                            "link": "devices"
                                         }
                                     ],
-                                    "element": {
-                                        "style": {
-                                            "display": "inherit"
-                                        },
-                                        "className": "ClassMenu"
-                                    },
-                                    "arrayAppObject": [
-                                        {
-                                            "type": "ComponentFontAwesome",
-                                            "element": {
-                                                "style": {
-                                                    "vertical-align": "-webkit-baseline-middle",
-                                                    "color": "white",
-                                                    "opacity": "1",
-                                                    "padding": "5px",
-                                                    "font-size": "30px"
-                                                },
-                                                "className": "ClassPulse fas fa-server"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "ComponentCenterHolder",
-                    "element": {
-                        "style": {
-                            "width": "33%"
-                        }
-                    },
-                    "arrayAppObject": [
-                        {
-                            "type": "ComponentDivisor",
-                            "arrayAppObjectEvent": [
-                                {
-                                    "name": "router",
-                                    "link": "camera"
-                                }
-                            ],
-                            "element": {
-                                "style": {
-                                    "display": "inline-flex"
-                                }
-                            },
-                            "arrayAppObject": [
-                                {
-                                    "type": "ComponentDivisor",
                                     "element": {
                                         "style": {
                                             "display": "inherit"
@@ -112,10 +62,20 @@
                     ]
                 },
                 {
+                    "type": "ComponentCenterHolder",
+                    "element": {
+                        "style": {
+                            "width": "0%"
+                        }
+                    },
+                    "arrayAppObject": [
+                    ]
+                },
+                {
                     "type": "ComponentRightHolder",
                     "element": {
                         "style": {
-                            "width": "33%"
+                            "width": "50%"
                         }
                     },
                     "arrayAppObject": [

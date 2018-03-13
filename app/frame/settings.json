@@ -1,238 +1,146 @@
 {
     "background": {
-        "image": {
-            "element": {
-                "style": {
-                    "background-color": "rgba(225, 223, 221,1)",
-                    "opacity": 1,
-                    "visibility": "visible",
-                    "position": "fixed",
-                    "filter": "brightness(100%) grayscale(0%) blur(0px)",
-                    "zIndex": -1000,
-                    "max-width": "inherit",
-                    "max-height": "inherit",
-                    "width": "100%",
-                    "height": "100%"
-                }
-            },
-            "img": {
-                "element": {
-                    "style": {
-                        "width": "100%",
-                        "opacity": 0.1,
-                        "height": "100%"
-                    },
-                    "src": "image/streame.svg"
-                }
+        "element": {
+            "style": {
+                "background-color": "dodgerblue",
+                "opacity": 1,
+                "visibility": "visible",
+                "position": "fixed",
+                "filter": "brightness(100%) grayscale(0%) blur(0px)",
+                "zIndex": -1000,
+                "max-width": "inherit",
+                "max-height": "inherit",
+                "width": "100%",
+                "height": "100%",
+                "text-align": "center",
+                "justify-content": "center",
+                "display": "flex",
+                "align-items": "center",
+                "mix-blend-mode": "difference"
             }
         }
     },
-    "arrayDivisor": [
+    "arrayAppObject": [
         {
-            "arrayAuthorization": [
-                {
-                    "code": "UserManegement",
-                    "runFunction": "goToLogin()"
+            "type": "ComponentDivisor",
+            "element": {
+                "style": {
+                    "height": "100%"
                 }
-            ],
-            "arrayDivisor": [
+            },
+            "arrayAppObject": [
                 {
-                    "element": {
-                        "style": {
-                            "height": "10px",
-                            "width": "100%",
-                            "display": "block",
-                            "opacity": 1,
-                            "color": "transparent",
-                            "padding": [
-                                5
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "arrayDivisor": [
-                {
-                    "element": {
-                        "style": {
-                            "opacity": 1,
-                            "width": "100%",
-                            "display": "block",
-                            "color": "transparent",
-                            "margin-top": "20px",
-                            "margin-left": "15px",
-                            "padding": [
-                                5
-                            ]
-                        }
-                    },
-                    "arrayDivisor": [
+                    "type": "ComponentDivisor",
+                    "arrayAppObject": [
                         {
-                            "arrayItem": [
-                                {
-                                    "element": {
-                                        "style": {
-                                            "display": "block",
-                                            "float": "left",
-                                            "width": "100%",
-                                            "text-align": "center",
-                                            "margin": "1px 0px"
-                                        }
-                                    },
-                                    "colorEffect": {
-                                        "element": {
-                                            "style": {
-                                                "color": "black"
-                                            }
-                                        },
-                                        "font": {
-                                            "element": {
-                                                "className": "ClassOpenSans",
-                                                "style": {
-                                                    "width": "100%",
-                                                    "font-size": "2vw",
-                                                    "text-align": "center",
-                                                    "padding": [
-                                                        0
-                                                    ]
-                                                }
-                                            },
-                                            "animationEffect": {
-                                                "element": {
-                                                    "style": {
-                                                        "display": "block"
-                                                    }
-                                                },
-                                                "animationSubEffect": {
-                                                    "arrayAnimationSubEffectHolder": [
-                                                        {
-                                                            "information": {
-                                                                "information": "title",
-                                                                "element": {
-                                                                    "style": {
-                                                                        "vertical-align": "sub"
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "arrayDivisor": [
-                {
-                    "element": {
-                        "style": {
-                            "opacity": 1,
-                            "width": "100%",
-                            "display": "contents",
-                            "float": "none",
-                            "color": "transparent",
-                            "padding": [
-                                5
-                            ]
-                        }
-                    },
-                    "arrayDivisor": [
-                        {
+                            "type": "ComponentDivisor",
                             "element": {
                                 "style": {
-                                    "display": "inline-block",
-                                    "width": "100%",
-                                    "float": "none",
-                                    "background-color": "rgba(255, 255, 255, 0.3)",
-                                    "margin": "1px 0px",
-                                    "padding": "2.5%",
-                                    "opacity": 0.9
+                                    "opacity": 1,
+                                    "display": "contents",
+                                    "color": "transparent"
                                 }
                             },
-                            "arrayItem": [
+                            "arrayAppObject": [
                                 {
+                                    "type": "ComponentDivisor",
                                     "element": {
                                         "style": {
-                                            "padding-left": "10px",
-                                            "display": "block",
-                                            "float": "left"
-                                        }
-                                    },
-                                    "colorEffect": {
-                                        "element": {
-                                            "style": {
-                                                "color": "black"
-                                            }
-                                        },
-                                        "font": {
-                                            "element": {
-                                                "className": "ClassOpenSans",
-                                                "style": {
-                                                    "width": "200px",
-                                                    "height": "100%",
-                                                    "font-size": "20px",
-                                                    "padding": [
-                                                        0
-                                                    ]
-                                                }
-                                            },
-                                            "animationEffect": {
-                                                "element": {
-                                                    "style": {
-                                                        "display": "block"
-                                                    }
-                                                },
-                                                "animationSubEffect": {
-                                                    "arrayAnimationSubEffectHolder": [
-                                                        {
-                                                            "information": {
-                                                                "information": "langTitle",
-                                                                "element": {}
-                                                            }
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            ],
-                            "arrayDataInput": [
-                                {
-                                    "element": {
-                                        "special": {
-                                            "tabindex":"00"
-                                        },
-                                        "style": {
+                                            "float": "left",
                                             "color": "black",
-                                            "opacity": 0.8,
-                                            "font-size": "25px",
-                                            "margin": "10px"
-                                        }
+                                            "background-color": "rgba(255, 255, 255, 0.3)",
+                                            "margin": "2.5%",
+                                            "padding": "2.5%",
+                                            "display": "inherit"
+                                        },
+                                        "className": "ClassMenu"
                                     },
-                                    "arrayComboBox": [
-                                        {
-                                            "code": "Languages",
-                                            "runFunction": "run()",
-                                            "runOnBuild": true,
-                                            "appObject": {},
-                                            "arrayOption": []
-                                        }
-                                    ],
                                     "arrayAppObjectEvent": [
                                         {
-                                            "name": "change",
-                                            "appObject": {},
-                                            "runFunction": "run()",
-                                            "code": "SetLanguage"
+                                            "name": "router",
+                                            "link": "connectivitySettings"
+                                        }
+                                    ],
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentFontAwesome",
+                                            "element": {
+                                                "style": {
+                                                    "vertical-align": "-webkit-baseline-middle",
+                                                    "color": "white",
+                                                    "opacity": "1",
+                                                    "font-size": "20vw"
+                                                },
+                                                "className": "ClassPulse fas fa-wifi"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ComponentDivisor",
+                                    "element": {
+                                        "style": {
+                                            "float": "left",
+                                            "color": "black",
+                                            "background-color": "rgba(255, 255, 255, 0.3)",
+                                            "margin": "2.5%",
+                                            "padding": "2.5%",
+                                            "display": "inherit"
+                                        },
+                                        "className": "ClassMenu"
+                                    },
+                                    "arrayAppObjectEvent": [
+                                        {
+                                            "name": "router",
+                                            "link": "cameraSettings"
+                                        }
+                                    ],
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentFontAwesome",
+                                            "element": {
+                                                "style": {
+                                                    "vertical-align": "-webkit-baseline-middle",
+                                                    "color": "white",
+                                                    "opacity": "1",
+                                                    "font-size": "20vw"
+                                                },
+                                                "className": "ClassPulse fas fa-camera"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ComponentDivisor",
+                                    "element": {
+                                        "style": {
+                                            "float": "left",
+                                            "color": "black",
+                                            "background-color": "rgba(255, 255, 255, 0.3)",
+                                            "margin": "2.5%",
+                                            "padding": "2.5%",
+                                            "display": "inherit"
+                                        },
+                                        "className": "ClassMenu"
+                                    },
+                                    "arrayAppObjectEvent": [
+                                        {
+                                            "name": "router",
+                                            "link": "languageSettings"
+                                        }
+                                    ],
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentFontAwesome",
+                                            "element": {
+                                                "style": {
+                                                    "vertical-align": "-webkit-baseline-middle",
+                                                    "color": "white",
+                                                    "opacity": "1",
+                                                    "font-size": "20vw"
+                                                },
+                                                "className": "ClassPulse fas fa-language"
+                                            }
                                         }
                                     ]
                                 }

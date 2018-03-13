@@ -1,0 +1,254 @@
+{
+    "background": {
+        "element": {
+            "style": {
+                "background-color": "dodgerblue",
+                "opacity": 1,
+                "visibility": "visible",
+                "position": "fixed",
+                "filter": "brightness(100%) grayscale(0%) blur(0px)",
+                "zIndex": -1000,
+                "max-width": "inherit",
+                "max-height": "inherit",
+                "width": "100%",
+                "height": "100%",
+                "text-align": "center",
+                "justify-content": "center",
+                "display": "flex",
+                "align-items": "center",
+                "mix-blend-mode": "difference"
+            }
+        }
+    },
+    "arrayAppObject": [
+        {
+            "type": "ComponentDivisor",
+            "element": {
+                "style": {
+                    "height": "100%",
+                    "text-align": "center",
+                    "justify-content": "center",
+                    "display": "flex",
+                    "align-items": "center"
+                }
+            },
+            "arrayAppObject": [
+                {
+                    "type": "ComponentDivisor",
+                    "element": {
+                        "style": {
+                            "width": "85%",
+                            "border": "solid 1px white",
+                            "padding": "5px",
+                            "box-sizing": "border-box"
+                        }
+                    },
+                    "arrayAppObject": [
+                        {
+                            "type": "ComponentDivisor",
+                            "element": {
+                                "style": {}
+                            },
+                            "arrayAppObject": [
+                                {
+                                    "type": "ComponentDivisor",
+                                    "element": {
+                                        "style": {
+                                            "display": "inline-flex",
+                                            "padding": "5px",
+                                            "width": "50%",
+                                            "box-sizing": "border-box"
+                                        }
+                                    },
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentInformation",
+                                            "element": {
+                                                "className": "ClassOpenSans",
+                                                "style": {
+                                                    "color": "white",
+                                                    "width": "100%",
+                                                    "opacity": 1
+                                                }
+                                            },
+                                            "information": "connectedTo"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "ComponentDivisor",
+                                    "element": {
+                                        "style": {
+                                            "display": "inline-flex",
+                                            "padding": "5px",
+                                            "width": "50%",
+                                            "box-sizing": "border-box"
+                                        }
+                                    },
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentInformation",
+                                            "arrayAppObjectEvent": [
+                                                {
+                                                    "name": "build",
+                                                    "appObject": {},
+                                                    "runFunction": "getConnected(this.father)",
+                                                    "code": "Wifi"
+                                                }
+                                            ],
+                                            "element": {
+                                                "className": "ClassOpenSans",
+                                                "style": {
+                                                    "color": "white",
+                                                    "width": "100%",
+                                                    "opacity": 1
+                                                }
+                                            },
+                                            "information": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ComponentDivisor",
+                            "element": {
+                                "style": {}
+                            },
+                            "arrayAppObject": [
+                                {
+                                    "type": "ComponentDataInput",
+                                    "element": {
+                                        "style": {
+                                            "display": "inline-flex",
+                                            "padding": "5px",
+                                            "width": "100%",
+                                            "box-sizing": "border-box"
+                                        }
+                                    },
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentComboBox",
+                                            "element": {
+                                                "style": {
+                                                    "color": "white",
+                                                    "width": "100%",
+                                                    "border": "1px solid white",
+                                                    "opacity": 1
+                                                },
+                                                "placeholder": "connections"
+                                            },
+                                            "arrayAppObjectEvent": [
+                                                {
+                                                    "name": "build",
+                                                    "appObject": {},
+                                                    "runFunction": "getConnections(this.father)",
+                                                    "code": "Wifi"
+                                                },
+                                                {
+                                                    "name": "mouseenter",
+                                                    "appObject": {},
+                                                    "runFunction": "getConnections(this.father)",
+                                                    "code": "Wifi"
+                                                }
+                                            ],
+                                            "arrayAppObject": [
+                                                {
+                                                    "type": "ComponentOption",
+                                                    "element": {
+                                                        "value": "",
+                                                        "selected": true,
+                                                        "hidden": true,
+                                                        "disabled": true
+                                                    },
+                                                    "information": "connections"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ComponentDivisor",
+                            "element": {
+                                "style": {}
+                            },
+                            "arrayAppObject": [
+                                {
+                                    "type": "ComponentDataInput",
+                                    "element": {
+                                        "style": {
+                                            "display": "inline-flex",
+                                            "padding": "5px",
+                                            "width": "100%",
+                                            "box-sizing": "border-box"
+                                        }
+                                    },
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentTextField",
+                                            "element": {
+                                                "style": {
+                                                    "color": "white",
+                                                    "border-bottom": "1px solid white",
+                                                    "opacity": 1
+                                                },
+                                                "placeholder": "password",
+                                                "type": "password"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ComponentDivisor",
+                            "arrayAppObject": [
+                                {
+                                    "type": "ComponentDivisor",
+                                    "arrayAppObjectEvent": [
+                                        {
+                                            "name": "click",
+                                            "appObject": {},
+                                            "runFunction": "connect(this.father)",
+                                            "code": "Wifi"
+                                        }
+                                    ],
+                                    "element": {
+                                        "style": {
+                                            "display": "inline-flex",
+                                            "width": "100%",
+                                            "padding": "5px",
+                                            "float": "left",
+                                            "box-sizing": "border-box"
+                                        }
+                                    },
+                                    "arrayAppObject": [
+                                        {
+                                            "type": "ComponentInformation",
+                                            "information": "connect",
+                                            "element": {
+                                                "className": "ClassOpenSans",
+                                                "style": {
+                                                    "width": "100%",
+                                                    "padding": "5px",
+                                                    "font-size": "16px",
+                                                    "text-align": "center",
+                                                    "float": "left",
+                                                    "border": "solid 1px white",
+                                                    "color": "white",
+                                                    "box-sizing": "border-box"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
