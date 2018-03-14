@@ -2,6 +2,7 @@ import { AppObject, Component } from 'backappjh';
 import { BasicSocket, UniqueSocket } from 'basicsocket';
 import { Disk } from './../disk/disk';
 import * as freeice from 'freeice';
+import * as adapter from 'webrtc-adapter';
 declare var MediaRecorder: any;
 declare var AudioContext: any;
 
@@ -73,7 +74,7 @@ export class Stream extends AppObject {
                 { url: 'turn:71.6.135.115:3479', username: 'test', credential: 'tester' }
             ]
         };
-        _self.streamConnection = new webkitRTCPeerConnection(_self.configuration) || new RTCPeerConnection(_self.configuration);
+        _self.streamConnection = new RTCPeerConnection(_self.configuration);
         _self.configStream();
         _self.socketIo.on('stream', (stream) => {
             if (stream.offer) {
