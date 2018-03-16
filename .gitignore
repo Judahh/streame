@@ -4,6 +4,7 @@ typings
 *.webm
 *.gz
 dist
+out
 node_modules
 backApp
 backApi
